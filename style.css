@@ -1,0 +1,55 @@
+:root {
+  --purple: #3e0249;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--purple);
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.board {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.cell {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+  color: var(--purple);
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--purple);
+  color: black;
+  border-color: purple;
+  font-size: 10px;
+  transition: 200ms transform;
+}
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
